@@ -13,7 +13,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "electron .",
+    "start": "npm run web-build && electron .",
     "web-start": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
     "web-build": "webpack --config webpack-production.config.js --progress --colors",
     "clean": "rm -rf ./dist",
